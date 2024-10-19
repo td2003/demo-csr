@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-4 practice</title>
+</head>
+<body>
+    <form>
+        <label for="usrname">Username:</label>
+        <input type="text" id="username" name="Username" required title="Enter your username" placeholder="Username">
+    </form>
+    <br>
+    <hr>
+    <form action="action.php" autocomplete="on">
+
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" size="50" autofocus><br>
+        <label for="pin">PIN: </label><br>
+        <input type="text" id="pin" name="pin" size="4">
+        <hr><h1>maxlength is 4</h1>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" size="50"><br>
+        <label for="pin">PIN: </label><br>
+        <input type="text" id="pin" name="pin" maxlength="4" size="4">
+        <br>
+        <label for="datemax">Enter a date before 1980-01-01:</label> <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+        <label for="datemin">Enter a date after 2000-01-01:</label>
+        <input type="date" id="datemin" name="datemin" min="2000-01-02"><br><br>
+        <label for="quantity">Quantity (between 1 and 5): </label>
+        <input type="number" id="quantity" name="quantity" min="1" max="5">
+
+        <br>
+        <input type="file" id="file" name="file" placeholder="file" accept=".png,.jpej,.pdf,.ptx" multiple >
+    </form>
+</body>
+</html>
